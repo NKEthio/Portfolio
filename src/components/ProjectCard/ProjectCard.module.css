@@ -1,0 +1,109 @@
+/* src/components/ProjectCard/ProjectCard.module.css */
+.card {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed-normal) var(--transition-timing),
+                box-shadow var(--transition-speed-normal) var(--transition-timing);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden; /* Important for overlay effect */
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, may crop */
+    display: block;
+    transition: transform var(--transition-speed-normal) var(--transition-timing);
+  }
+  
+  .card:hover .image {
+     transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  /* Overlay effect */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity var(--transition-speed-normal) var(--transition-timing);
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .links {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+  
+  .link {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color var(--transition-speed-fast) var(--transition-timing);
+  }
+  
+  .link:hover {
+    background-color: var(--primary-variant);
+    color: var(--on-primary-color); /* Maintain color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .content {
+    padding: var(--spacing-lg);
+    flex-grow: 1; /* Allow content to fill remaining space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--on-surface-color);
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    color: var(--on-background-color);
+    flex-grow: 1; /* Push tags to the bottom */
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: auto; /* Push tags to bottom */
+  }
+  
+  .tag {
+    background-color: rgba(3, 218, 198, 0.15); /* Secondary color with low opacity */
+    color: var(--secondary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.8rem;
+    font-weight: bold;
+  }

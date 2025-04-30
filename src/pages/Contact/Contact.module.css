@@ -1,0 +1,97 @@
+/* src/pages/Contact/Contact.module.css */
+
+  
+  .title {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 2.5rem;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+    color: var(--on-background-color);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contactInfo {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column default */
+    gap: var(--spacing-xl);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center items in single column layout */
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for info items */
+      text-align: left; /* Align text left in columns */
+      /* If adding a form, you might adjust columns, e.g., 1fr 1fr or span form across */
+    }
+  }
+  
+  .infoItem {
+    background-color: var(--surface-color);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .infoItem h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+  }
+  
+  .contactLink {
+    font-size: 1.1rem;
+    word-break: break-all; /* Prevent long emails from overflowing */
+    display: inline-block; /* Allows padding/margin */
+  }
+  
+  .contactLink:hover {
+     text-decoration: underline;
+     color: var(--primary-color);
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: column; /* Stack links vertically initially */
+    gap: var(--spacing-sm);
+    align-items: center; /* Center links in single column */
+  
+  
+    @media (min-width: 768px) {
+       flex-direction: row; /* Links side-by-side on larger screens */
+       align-items: flex-start; /* Align to start in grid cell */
+       gap: var(--spacing-lg);
+    }
+  }
+  
+  .socialLink {
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    color: var(--primary-color);
+    transition: background-color var(--transition-speed-fast) var(--transition-timing),
+                color var(--transition-speed-fast) var(--transition-timing);
+  }
+  
+  .socialLink:hover {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    text-decoration: none;
+  }
+  
+  /* Styles for a potential contact form */
+  .contactForm {
+    @media (min-width: 768px) {
+       grid-column: span 2; /* Make form span both columns if needed */
+    }
+    /* Add form input/textarea/button styles here */
+    margin-top: var(--spacing-lg);
+  }

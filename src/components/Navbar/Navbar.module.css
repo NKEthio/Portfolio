@@ -1,0 +1,153 @@
+/* src/components/Navbar/Navbar.module.css */
+.navbar {
+    background-color: var(--surface-color);
+    padding: var(--spacing-md) 0;
+    position: sticky; /* Make navbar sticky */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+  
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--on-surface-color);
+    text-decoration: none;
+  }
+  
+  .navLogo:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .navMenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin-left: var(--spacing-lg);
+  }
+  
+  .navLink {
+    color: var(--on-background-color);
+    text-decoration: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: background-color var(--transition-speed-fast) var(--transition-timing),
+                color var(--transition-speed-fast) var(--transition-timing);
+    position: relative; /* For pseudo-element underline */
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    transition: width var(--transition-speed-normal) var(--transition-timing);
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    color: var(--on-surface-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  
+  .navLink.active {
+    color: var(--on-surface-color);
+    font-weight: bold;
+  }
+  .navLink.active::after {
+    width: 70%; /* Active underline style */
+  }
+  
+  /* Hamburger Menu - Initially Hidden */
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001; /* Above nav items */
+  }
+  
+  .menuToggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--on-surface-color);
+    margin: 5px 0;
+    transition: all var(--transition-speed-normal) var(--transition-timing);
+    border-radius: 3px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .menuToggle {
+      display: block; /* Show hamburger */
+    }
+  
+    .navMenu {
+      display: none; /* Hide menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 100%; /* Position below navbar */
+      left: 0;
+      width: 100%;
+      background-color: var(--surface-color);
+      padding: var(--spacing-lg) 0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity var(--transition-speed-normal) var(--transition-timing),
+                  transform var(--transition-speed-normal) var(--transition-timing);
+    }
+  
+    .navMenu.open {
+      display: flex; /* Show when open */
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .navItem {
+      margin: var(--spacing-sm) 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navLink {
+      display: block; /* Make links take full width */
+      padding: var(--spacing-md) 0;
+    }
+    .navLink::after {
+        bottom: 8px; /* Adjust underline position for block link */
+    }
+    .navLink.active::after {
+        width: 30%; /* Adjust active underline for mobile */
+    }
+  
+    /* Hamburger Animation */
+    .menuToggle.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .menuToggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    .menuToggle.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }

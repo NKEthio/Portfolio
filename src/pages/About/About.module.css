@@ -1,0 +1,61 @@
+/* src/pages/About/About.module.css */
+/* .aboutSection { */
+    /* Styles for the about section container */
+  /* } */
+  
+  .title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: 2.5rem;
+  }
+  
+  .aboutContent {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: var(--spacing-xl);
+    align-items: center; /* Align items vertically */
+  
+    /* Enable two columns on larger screens */
+    @media (min-width: 768px) {
+       /* Optional: Add a column for a picture */
+       /* grid-template-columns: 1fr 2fr; */ /* Image on left, text on right */
+       /* grid-template-columns: 2fr 1fr; */ /* Text on left, image on right */
+    }
+  }
+  
+  .profilePic {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular picture */
+    margin: 0 auto var(--spacing-lg); /* Center picture */
+    border: 4px solid var(--secondary-color); /* Add a border */
+    box-shadow: 0 0 20px rgba(3, 218, 198, 0.3);
+  
+    @media (min-width: 768px) {
+      margin: 0; /* Reset margin for grid layout */
+      /* justify-self: center; */ /* Optional: Center within grid cell */
+    }
+  }
+  
+  .bio {
+    color: var(--on-background-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .bio p {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .skill {
+    display: inline-block;
+    background-color: rgba(98, 0, 234, 0.2); /* Primary color low opacity */
+    color: var(--primary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin: var(--spacing-xs);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent skills from breaking mid-word */
+  }

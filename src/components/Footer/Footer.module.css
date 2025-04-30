@@ -1,0 +1,28 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+    background-color: var(--surface-color);
+    color: var(--on-background-color);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes footer to bottom if content is short */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+  
+  .socialLinks {
+    margin-left: var(--spacing-md);
+  }
+  
+  .socialLinks a {
+    margin: 0 var(--spacing-sm);
+    color: var(--on-background-color);
+  }
+  
+  .socialLinks a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
