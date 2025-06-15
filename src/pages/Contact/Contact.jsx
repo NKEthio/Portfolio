@@ -5,8 +5,8 @@ import AnimatedPage from '../../components/AnimatedPage/AnimatedPage';
 
 function Contact() {
   // Basic obfuscation for email - replace with your actual email parts
-  const emailUser = 'nuredinkassaw599@gmail.com';
-  const emailDomain = 'example.com';
+  const emailUser = 'nuredinkassaw599';
+  const emailDomain = 'gmail.com';
 
   return (
     <>
