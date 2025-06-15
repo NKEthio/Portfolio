@@ -9,7 +9,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className="container">
         <p>
-          © {currentYear} Your Name. All rights reserved.
+          © {currentYear} Nuredin. All rights reserved.
           {/* Add social links here if desired */}
           {/* Example:
           <span className={styles.socialLinks}>

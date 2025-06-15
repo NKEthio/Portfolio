@@ -19,7 +19,7 @@ function Navbar() {
     <nav className={styles.navbar}>
       <div className={`${styles.navContainer} container`}>
         <NavLink to="/" className={styles.navLogo} onClick={closeMenu}>
-          Your Name {/* Or Logo */}
+          Nuredin Kassaw {/* Or Logo */}
         </NavLink>
 
         <button

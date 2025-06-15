@@ -10,10 +10,10 @@ function Home() {
       <div className={`${styles.homeHero} section-padding`}>
         <div className="container">
           <h1 className={styles.title}>
-            Hi, I'm <span className="highlight">Your Name</span>
+            Hi, I'm <span className="highlight">Nureidn Kassaw</span>
           </h1>
           <h2 className={styles.subtitle}>
-            A Creative Frontend Developer {/* Or your title */}
+            A Creative Frontend Developer 
           </h2>
           <p className={styles.description}>
             I build engaging and accessible web experiences with a focus on clean code and modern design principles.

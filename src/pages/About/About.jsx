@@ -17,17 +17,17 @@ function About() {
 
             <div className={styles.bio}>
               <p>
-                Hello! I'm [Your Name], a passionate frontend developer based in [Your Location].
+                Hello! I'm Nuredin, a passionate frontend developer based in Ethiopia.
                 I specialize in creating intuitive, dynamic user interfaces using modern web technologies like React, Vue, and more.
               </p>
               <p>
-                My journey into web development started [Your Story - e.g., during university, as a hobby, etc.]. I love the blend of creativity and problem-solving involved in bringing designs to life on the web. I'm constantly learning and exploring new technologies to improve my skills.
+                My journey into web development started during University. I love the blend of creativity and problem-solving involved in bringing designs to life on the web. I'm constantly learning and exploring new technologies to improve my skills.
               </p>
               <p>
-                Key Skills: <span className={styles.skill}>React</span>, <span className={styles.skill}>JavaScript (ES6+)</span>, <span className={styles.skill}>HTML5</span>, <span className={styles.skill}>CSS3/Sass</span>, <span className={styles.skill}>Git</span>, <span className={styles.skill}>Responsive Design</span>, <span className={styles.skill}>APIs</span>, <span className={styles.skill}>[Add More]</span>.
+                Key Skills: <span className={styles.skill}>React</span>, <span className={styles.skill}>JavaScript (ES6+)</span>, <span className={styles.skill}>HTML5</span>, <span className={styles.skill}>CSS3/Sass</span>, <span className={styles.skill}>Git</span>, <span className={styles.skill}>Responsive Design</span>, <span className={styles.skill}>APIs</span>, <span className={styles.skill}>python</span>, <span className={styles.skill}>Java</span>.
               </p>
               <p>
-                When I'm not coding, I enjoy [Your Hobbies - e.g., hiking, reading, gaming, photography].
+                When I'm not coding, I enjoy playing chess, watching nature documentaries and reading books.
               </p>
             </div>
           </div>
