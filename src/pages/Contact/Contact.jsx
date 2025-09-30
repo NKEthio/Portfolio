@@ -28,6 +28,21 @@ function Contact() {
             </div>
 
             <div className={styles.infoItem}>
+              <h3>Phone</h3>
+              <a href="tel:+251929422664" className={styles.contactLink}>
+                +251 929 422 664
+              </a>
+            </div>
+
+            <div className={styles.infoItem}>
+              <h3>Address</h3>
+              <p className={styles.addressText}>
+                King George VI Street<br />
+                Addis Ababa, Ethiopia
+              </p>
+            </div>
+
+            <div className={styles.infoItem}>
               <h3>Connect</h3>
               {/* Add links to your social/professional profiles */}
               <div className={styles.socialLinks}>

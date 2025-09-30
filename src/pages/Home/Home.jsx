@@ -10,13 +10,13 @@ function Home() {
       <div className={`${styles.homeHero} section-padding`}>
         <div className="container">
           <h1 className={styles.title}>
-            Hi, I'm <span className="highlight">Nureidn Kassaw</span>
+            Hi, I'm <span className="highlight">NUREDIN Kassaw</span>
           </h1>
           <h2 className={styles.subtitle}>
-            A Creative Frontend Developer 
+            Biomedical Engineering Student 
           </h2>
           <p className={styles.description}>
-            I build engaging and accessible web experiences with a focus on clean code and modern design principles.
+            I am a student and explorer with a passion for discovering my talents and making a positive impact in the world. With a keen interest in AI, I aspire to leverage technology to revolutionize healthcare and bring transformative change to my country.
           </p>
           <div className={styles.ctaButtons}>
             <Link to="/projects" className={styles.ctaPrimary}>

@@ -17,17 +17,23 @@ function About() {
 
             <div className={styles.bio}>
               <p>
-                Hello! I'm Nuredin, a passionate frontend developer based in Ethiopia.
-                I specialize in creating intuitive, dynamic user interfaces using modern web technologies like React, Vue, and more.
+                Hello! I'm NUREDIN Kassaw, a Biomedical Engineering student at Addis Ababa University (2022 – Present).
+                I am a student and explorer with a passion for discovering my talents and making a positive impact in the world. My ambition drives me to seek creative solutions and contribute meaningfully to society.
               </p>
               <p>
-                My journey into web development started during University. I love the blend of creativity and problem-solving involved in bringing designs to life on the web. I'm constantly learning and exploring new technologies to improve my skills.
+                With a keen interest in AI, I aspire to leverage technology to revolutionize healthcare and bring transformative change to my country. I am dedicated, innovative, and always eager to learn and grow.
               </p>
               <p>
-                Key Skills: <span className={styles.skill}>React</span>, <span className={styles.skill}>JavaScript (ES6+)</span>, <span className={styles.skill}>HTML5</span>, <span className={styles.skill}>CSS3/Sass</span>, <span className={styles.skill}>Git</span>, <span className={styles.skill}>Responsive Design</span>, <span className={styles.skill}>APIs</span>, <span className={styles.skill}>python</span>, <span className={styles.skill}>Java</span>.
+                Key Skills: <span className={styles.skill}>Python Programming</span>, <span className={styles.skill}>PyTorch</span>, <span className={styles.skill}>HTML</span>, <span className={styles.skill}>CSS</span>, <span className={styles.skill}>JavaScript</span>, <span className={styles.skill}>ReactJS</span>, <span className={styles.skill}>Problem Solving</span>, <span className={styles.skill}>Creativity</span>, <span className={styles.skill}>Critical Thinking</span>.
               </p>
               <p>
-                When I'm not coding, I enjoy playing chess, watching nature documentaries and reading books.
+                <strong>Goals:</strong> Learn and apply AI to transform healthcare, participate in volunteer programs, and graduate to pursue impactful projects.
+              </p>
+              <p>
+                <strong>Achievement:</strong> Top 3 in Hult Prize Competition (March 2024)
+              </p>
+              <p>
+                When I'm not studying, I enjoy studying philosophy and history, and playing chess.
               </p>
             </div>
           </div>

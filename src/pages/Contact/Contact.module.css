@@ -56,6 +56,12 @@
      color: var(--primary-color);
   }
   
+  .addressText {
+    font-size: 1.1rem;
+    color: var(--on-background-color);
+    line-height: 1.7;
+  }
+  
   .socialLinks {
     display: flex;
     flex-direction: column; /* Stack links vertically initially */
