@@ -13,8 +13,8 @@ function Footer() {
           {/* Add social links here if desired */}
           {/* Example:
           <span className={styles.socialLinks}>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/NKEthio" target="_blank" rel="noopener noreferrer">GitHub</a> |
+            <a href="https://linkedin.com/in/nuredin-kassaw" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </span>
           */}
         </p>

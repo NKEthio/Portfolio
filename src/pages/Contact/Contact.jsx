@@ -31,8 +31,8 @@ function Contact() {
               <h3>Connect</h3>
               {/* Add links to your social/professional profiles */}
               <div className={styles.socialLinks}>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>GitHub</a>
+                <a href="https://linkedin.com/in/nuredin-kassaw" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
+                <a href="https://github.com/NKEthio" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>GitHub</a>
                 {/* Add more links (Twitter, etc.) */}
               </div>
             </div>
