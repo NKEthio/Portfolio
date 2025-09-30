@@ -12,7 +12,7 @@ const projects = [
       // imageUrl: projImg1, // Or use imported image from assets
       tags: ["React", "Node.js", "Express", "MongoDB", "Stripe", "CSS Modules"],
       liveUrl: "https://example.com", // Link to live demo
-      repoUrl: "https://github.com/yourusername/project-repo", // Link to GitHub repo
+      repoUrl: "https://github.com/NKEthio/project-repo", // Link to GitHub repo
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const projects = [
       imageUrl: "/placeholder-project.png",
       tags: ["React", "Chart.js", "REST API", "Material UI", "Vite"],
       liveUrl: "https://example.com",
-      repoUrl: "https://github.com/yourusername/project-repo",
+      repoUrl: "https://github.com/NKEthio/project-repo",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const projects = [
       imageUrl: "/placeholder-project.png",
       tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       liveUrl: "https://example.com",
-      repoUrl: "https://github.com/yourusername/project-repo",
+      repoUrl: "https://github.com/NKEthio/project-repo",
     },
      {
       id: 4,
@@ -39,7 +39,7 @@ const projects = [
       imageUrl: "/placeholder-project.png",
       tags: ["React", "Local Storage", "CSS Grid", "Hooks"],
       liveUrl: "https://example.com",
-      repoUrl: "https://github.com/yourusername/project-repo",
+      repoUrl: "https://github.com/NKEthio/project-repo",
     },
     // Add more projects as needed
   ];
