@@ -6,40 +6,40 @@
 const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce site built with React, Node.js, and Stripe integration for payments.",
+      title: "MedShop - Medical E-commerce",
+      description: "A Next.js e-commerce platform for medical equipment with Firebase authentication, Firestore database, and role-based access (Admin, Seller, Buyer).",
       imageUrl: "/placeholder-project.png", // Use image from public folder
       // imageUrl: projImg1, // Or use imported image from assets
-      tags: ["React", "Node.js", "Express", "MongoDB", "Stripe", "CSS Modules"],
-      liveUrl: "https://example.com", // Link to live demo
-      repoUrl: "https://github.com/NKEthio/project-repo", // Link to GitHub repo
+      tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "ShadCN/UI"],
+      liveUrl: "", // Link to live demo
+      repoUrl: "https://github.com/NKEthio/MedShop", // Link to GitHub repo
     },
     {
       id: 2,
-      title: "Interactive Data Dashboard",
-      description: "A dashboard displaying real-time data using Chart.js and fetching data from a REST API.",
+      title: "Task Manager",
+      description: "A simple and intuitive task management application for organizing daily tasks.",
       imageUrl: "/placeholder-project.png",
-      tags: ["React", "Chart.js", "REST API", "Material UI", "Vite"],
-      liveUrl: "https://example.com",
-      repoUrl: "https://github.com/NKEthio/project-repo",
+      tags: ["JavaScript", "HTML", "CSS", "Local Storage"],
+      liveUrl: "",
+      repoUrl: "https://github.com/NKEthio/Task-Manager",
     },
     {
       id: 3,
-      title: "Portfolio Website V1",
-      description: "My previous portfolio site, built with vanilla HTML, CSS, and JavaScript.",
+      title: "Trip - Travel Website",
+      description: "A visually appealing travel website showcasing beautiful destinations with responsive design.",
       imageUrl: "/placeholder-project.png",
-      tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      liveUrl: "https://example.com",
-      repoUrl: "https://github.com/NKEthio/project-repo",
+      tags: ["HTML", "CSS", "Responsive Design"],
+      liveUrl: "",
+      repoUrl: "https://github.com/NKEthio/Trip",
     },
      {
       id: 4,
-      title: "Task Management App",
-      description: "A simple CRUD application for managing daily tasks, featuring local storage persistence.",
+      title: "Lost and Found",
+      description: "A web application to help people find their lost items and report found items.",
       imageUrl: "/placeholder-project.png",
-      tags: ["React", "Local Storage", "CSS Grid", "Hooks"],
-      liveUrl: "https://example.com",
-      repoUrl: "https://github.com/NKEthio/project-repo",
+      tags: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "",
+      repoUrl: "https://github.com/NKEthio/LostAnfFound",
     },
     // Add more projects as needed
   ];
